@@ -16,7 +16,7 @@ RUN corepack enable
 
 WORKDIR /misskey
 
-COPY --link ["pnpm-lock.yaml", "pnpm-workspace.yaml", "package.json", "./"]
+COPY --link ["pnpm-lock.yaml", "pnpm-workspace.yaml", "package.json", ".npmrc", "./"]
 COPY --link ["scripts", "./scripts"]
 COPY --link ["packages/backend/package.json", "./packages/backend/"]
 COPY --link ["packages/frontend/package.json", "./packages/frontend/"]
